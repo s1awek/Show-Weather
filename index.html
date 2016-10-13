@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="
 https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="style.css">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
 </head>
 
 <body>
-<div class="wrapper">
+    <div class="wrapper">
         <div class="container">
             <div id="location">City, CC</div>
             <div class="temp-container">
                 <span id="temperature">0</span>
                 <span class="degre">o</span>
+
+                <div id="unit-changer-wrapper">
+                    <span class="unit">C</span>
+                    <span class="small-unit">/</span>
+                    <a href="#" id="unit-changer"><span class="small-unit">F</span></a>
+                </div>
             </div>
             <div id="error"></div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="script.js"></script>
 </body>
 

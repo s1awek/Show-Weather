@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #bada55;
+    text-decoration: none;
+}
+
 .degre {
     vertical-align: top;
     font: bold 40px/1.1em "Courier New", Courier, monospace;
@@ -27,4 +32,16 @@
 
 .wrapper {
     text-align: center;
+}
+
+.unit {
+    font: 70px Helvetica, sans-serif;
+}
+
+.small-unit {
+    font: 20px Helvetica, sans-serif;
+}
+
+#unit-changer-wrapper {
+	display: inline-block;
 }
