@@ -28,6 +28,7 @@ a {
 .container {
     display: inline-block;
     margin-top: 30vh;
+    margin-left: 150px;
 }
 
 .wrapper {
@@ -43,5 +44,16 @@ a {
 }
 
 #unit-changer-wrapper {
-	display: inline-block;
+    display: inline-block;
+}
+
+.icon {
+    float: left;
+    margin-left: -300px;
+    margin-top: -50px;
+}
+
+.weather-ico {
+    height: 200px;
+    width: auto;
 }

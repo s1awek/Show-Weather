@@ -22,15 +22,15 @@ $(document).ready(function () {
                             type: 'get',
                             cache: false,
                             success: function (dataWeather) {
-                                var temperatute = Math.round(dataWeather.list[0].main.temp);
-                                document.getElementById('temperature').innerHTML = temperatute;
+                                var temperature = Math.round(dataWeather.list[0].main.temp);
+                                document.getElementById('temperature').innerHTML = temperature;
                                 document.getElementById('location').innerHTML = dataWeather.city.name + ', ' + dataWeather.city.country;
                                 $('#unit-changer').click(function () {
                                     if (document.getElementsByClassName('unit')[0].innerHTML === "C") {
-                                        $('#unit-changer-wrapper').replaceWith('<div id="unit-changer-wrapper"><span class="unit">F</span><span class="small-unit">/</span><a href="#" id="unit-changer"><span class="small-unit">C</span></a></div>');
+                                        $('#unit-changer-wrapper').replaceWith('<div id="unit-changer-wrapper"><span class="unit">F</span><span class="small-unit"> / </span><a href="#" id="unit-changer"><span class="small-unit">C</span></a></div>');
                                         doIt('imperial');
                                     } else {
-                                        $('#unit-changer-wrapper').replaceWith('<div id="unit-changer-wrapper"><span class="unit">C</span><span class="small-unit">/</span><a href="#" id="unit-changer"><span class="small-unit">F</span></a></div>');
+                                        $('#unit-changer-wrapper').replaceWith('<div id="unit-changer-wrapper"><span class="unit">C</span><span class="small-unit"> / </span><a href="#" id="unit-changer"><span class="small-unit">F</span></a></div>');
                                         doIt('metric');
                                     }
                                 });
