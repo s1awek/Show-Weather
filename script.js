@@ -8,7 +8,6 @@ $(document).ready(function () {
     var clientIpApiUrl = 'https://api.ipify.org?format=json';
     var units = 'metric';
 
-
     $.ajax({
         url: clientIpApiUrl,
         dataType: 'json',
@@ -21,26 +20,29 @@ $(document).ready(function () {
                 type: 'get',
                 cache: false,
                 success: function (dataIpLocation) {
+
                     $.ajax({
                         url: weatherApiUrl + "city?q=" + dataIpLocation.city + "&APPID=083588bbe3a74143bc05a07dcc93e109&units=" + units,
                         dataType: 'json',
                         type: 'get',
                         cache: false,
                         success: function (dataWeather) {
-                            document.getElementById('temperature').innerHTML = 'Teraz w miejscowości ' + dataWeather.city.name + ' jest ' + dataWeather.list[0].main.temp + ' stopni celcjusza.';
+                            var temperatute = Math.round(dataWeather.list[0].main.temp);
+                            document.getElementById('temperature').innerHTML = temperatute;
+                            document.getElementById('location').innerHTML = dataWeather.city.name + ', ' + dataWeather.city.country;
                         },
                         error: function (err) {
-                            console.log('Data Weather API Error!');
+                            console.log('dataWeather API Error!');
                         }
                     });
                 },
                 error: function (err) {
-                    console.log('Data IP Location API Error!');
+                    console.log('dataIpLocation API Error!');
                 }
             });
         },
         error: function (err) {
-            console.log('Data Client IP API Error!');
+            console.log('dataClienIP API Error!');
         }
     });
 });
