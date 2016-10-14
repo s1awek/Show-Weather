@@ -2,6 +2,61 @@
     box-sizing: border-box;
 }
 
+.clear-day {
+    background: #fff url(img/clear_day.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.clear-night{
+    background: #fff url(img/clear_night.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.few-clouds-day {
+    background: #fff url(img/few_clouds_day.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.few-clouds-night {
+    background: #fff url(img/few_clouds_night.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.scattered-clouds {
+    background: #fff url(img/scattered_clouds.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.broken-clouds {
+    background: #fff url(img/broken_clouds.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.shower-rain {
+    background: #fff url(img/shower_rain.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.rain {
+    background: #fff url(img/rain.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.thunderstorm {
+    background: #fff url(img/thunderstorm.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.snow {
+    background: #fff url(img/snow.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
+.mist {
+    background: #fff url(img/mist.jpg) no-repeat fixed top left;
+    background-size: cover;
+}
+
 a {
     color: #bada55;
     text-decoration: none;

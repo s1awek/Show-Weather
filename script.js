@@ -43,8 +43,28 @@ $(document).ready(function () {
             var temperature = Math.round(dataWeather.list[0].main.temp);
             document.getElementById('temperature').innerHTML = temperature;
             document.getElementById('location').innerHTML = dataWeather.city.name + ', ' + dataWeather.city.country;
-            if (dataWeather.list[0].weather[0].main === 'Clear') {
+            if (dataWeather.list[0].weather[0].icon === '01d') {
                 $('.weather-ico').attr('src', 'img/icons/clear_day.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '01n') {
+                $('.weather-ico').attr('src', 'img/icons/clear_night.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '02d') {
+                $('.weather-ico').attr('src', 'img/icons/few_clouds_day.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '02n') {
+                $('.weather-ico').attr('src', 'img/icons/few_clouds_night.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '03d' || dataWeather.list[0].weather[0].icon === '03n') {
+                $('.weather-ico').attr('src', 'img/icons/scattered_clouds.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '04d' || dataWeather.list[0].weather[0].icon === '04n') {
+                $('.weather-ico').attr('src', 'img/icons/broken_clouds.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '09d' || dataWeather.list[0].weather[0].icon === '09n') {
+                $('.weather-ico').attr('src', 'img/icons/shower_rain.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '10d' || dataWeather.list[0].weather[0].icon === '10n') {
+                $('.weather-ico').attr('src', 'img/icons/rain.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '11d' || dataWeather.list[0].weather[0].icon === '11n') {
+                $('.weather-ico').attr('src', 'img/icons/thunderstorm.svg');
+            } else if (dataWeather.list[0].weather[0].icon === '13d' || dataWeather.list[0].weather[0].icon === '13n') {
+                $('.weather-ico').attr('src', 'img/icons/snow.svg');
+            }  else if (dataWeather.list[0].weather[0].icon === '50d' || dataWeather.list[0].weather[0].icon === '50n') {
+                $('.weather-ico').attr('src', 'img/icons/mist.svg');
             }
             $('#unit-changer').click(function () {
                 if (document.getElementsByClassName('unit')[0].innerHTML === "C") {
