@@ -45,26 +45,48 @@ $(document).ready(function () {
             document.getElementById('location').innerHTML = dataWeather.city.name + ', ' + dataWeather.city.country;
             if (dataWeather.list[0].weather[0].icon === '01d') {
                 $('.weather-ico').attr('src', 'img/icons/clear_day.svg');
+                $('body').removeClass();
+                $('body').addClass('clear-day');
             } else if (dataWeather.list[0].weather[0].icon === '01n') {
                 $('.weather-ico').attr('src', 'img/icons/clear_night.svg');
+                $('body').removeClass();
+                $('body').addClass('clear-night');
             } else if (dataWeather.list[0].weather[0].icon === '02d') {
                 $('.weather-ico').attr('src', 'img/icons/few_clouds_day.svg');
+                $('body').removeClass();
+                $('body').addClass('few-clouds-day');
             } else if (dataWeather.list[0].weather[0].icon === '02n') {
                 $('.weather-ico').attr('src', 'img/icons/few_clouds_night.svg');
+                $('body').removeClass();
+                $('body').addClass('few-clouds-night');
             } else if (dataWeather.list[0].weather[0].icon === '03d' || dataWeather.list[0].weather[0].icon === '03n') {
                 $('.weather-ico').attr('src', 'img/icons/scattered_clouds.svg');
+                $('body').removeClass();
+                $('body').addClass('scattered-clouds');
             } else if (dataWeather.list[0].weather[0].icon === '04d' || dataWeather.list[0].weather[0].icon === '04n') {
                 $('.weather-ico').attr('src', 'img/icons/broken_clouds.svg');
+                $('body').removeClass();
+                $('body').addClass('broken-clouds');
             } else if (dataWeather.list[0].weather[0].icon === '09d' || dataWeather.list[0].weather[0].icon === '09n') {
                 $('.weather-ico').attr('src', 'img/icons/shower_rain.svg');
+                $('body').removeClass();
+                $('body').addClass('shower-rain');
             } else if (dataWeather.list[0].weather[0].icon === '10d' || dataWeather.list[0].weather[0].icon === '10n') {
                 $('.weather-ico').attr('src', 'img/icons/rain.svg');
+                $('body').removeClass();
+                $('body').addClass('rain');
             } else if (dataWeather.list[0].weather[0].icon === '11d' || dataWeather.list[0].weather[0].icon === '11n') {
                 $('.weather-ico').attr('src', 'img/icons/thunderstorm.svg');
+                $('body').removeClass();
+                $('body').addClass('thunderstorm');
             } else if (dataWeather.list[0].weather[0].icon === '13d' || dataWeather.list[0].weather[0].icon === '13n') {
                 $('.weather-ico').attr('src', 'img/icons/snow.svg');
+                $('body').removeClass();
+                $('body').addClass('snow');
             }  else if (dataWeather.list[0].weather[0].icon === '50d' || dataWeather.list[0].weather[0].icon === '50n') {
                 $('.weather-ico').attr('src', 'img/icons/mist.svg');
+                $('body').removeClass();
+                $('body').addClass('mist');
             }
             $('#unit-changer').click(function () {
                 if (document.getElementsByClassName('unit')[0].innerHTML === "C") {

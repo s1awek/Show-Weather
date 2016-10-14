@@ -2,12 +2,16 @@
     box-sizing: border-box;
 }
 
+body {
+    color: rgb(34, 34, 34);
+}
+
 .clear-day {
     background: #fff url(img/clear_day.jpg) no-repeat fixed top left;
     background-size: cover;
 }
 
-.clear-night{
+.clear-night {
     background: #fff url(img/clear_night.jpg) no-repeat fixed top left;
     background-size: cover;
 }
@@ -78,12 +82,16 @@ a {
 .temp-container {
     margin: auto;
     text-align: left;
+    margin-left: 260px;
 }
 
 .container {
     display: inline-block;
     margin-top: 30vh;
-    margin-left: 150px;
+    min-width: 600px;
+    padding: 30px;
+    background-color: #ccc;
+    background-color: rgba(125, 125, 125, 0.5);
 }
 
 .wrapper {
@@ -104,8 +112,6 @@ a {
 
 .icon {
     float: left;
-    margin-left: -300px;
-    margin-top: -50px;
 }
 
 .weather-ico {
