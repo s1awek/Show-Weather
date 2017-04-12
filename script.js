@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var weatherApiUrl = 'http://api.openweathermap.org/data/2.5/forecast/';
+    var weatherApiUrl = 'http://api.openweathermap.org/data/2.5/forecast?';
     var ipLocationApiUrl = 'http://freegeoip.net/json/';
     var clientIpApiUrl = 'https://api.ipify.org?format=json';
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
         function cbDataIp(dataIpLocation) {
             $.ajax({
-                url: weatherApiUrl + "city?q=" + dataIpLocation.city + "&APPID=083588bbe3a74143bc05a07dcc93e109&units=" + units,
+                url: weatherApiUrl + "lat=" + dataIpLocation.latitude + "&lon=" + dataIpLocation.longitude + "&APPID=a4bdd16085e1079b65ad32553f7a1587&units=" + units,
                 dataType: 'json',
                 type: 'get',
                 cache: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
                 $('.weather-ico').attr('src', 'http://res.cloudinary.com/s1awek/image/upload/weather-app/icons/snow.svg');
                 $('body').removeClass();
                 $('body').addClass('snow');
-            }  else if (dataWeather.list[0].weather[0].icon === '50d' || dataWeather.list[0].weather[0].icon === '50n') {
+            } else if (dataWeather.list[0].weather[0].icon === '50d' || dataWeather.list[0].weather[0].icon === '50n') {
                 $('.weather-ico').attr('src', 'http://res.cloudinary.com/s1awek/image/upload/weather-app/icons/mist.svg');
                 $('body').removeClass();
                 $('body').addClass('mist');
