@@ -26,30 +26,36 @@ body {
     background-size: cover;
 }
 
+/*
 .scattered-clouds {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450671/weather-app/scattered_clouds.jpg) no-repeat fixed top left;
     background-size: cover;
 }
+*/
 
 .broken-clouds {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450672/weather-app/broken_clouds.jpg) no-repeat fixed top left;
     background-size: cover;
 }
 
+/*
 .shower-rain {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450671/weather-app/shower_rain.jpg) no-repeat fixed top left;
     background-size: cover;
 }
+*/
 
 .rain {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450670/weather-app/rain.jpg) no-repeat fixed top left;
     background-size: cover;
 }
 
+/*
 .thunderstorm {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450672/weather-app/thunderstorm.jpg) no-repeat fixed top left;
     background-size: cover;
 }
+*/
 
 .snow {
     background: #fff url(http://res.cloudinary.com/s1awek/image/upload/v1476450669/weather-app/snow.jpg) no-repeat fixed top left;
@@ -117,4 +123,10 @@ a {
 .weather-ico {
     height: 200px;
     width: auto;
+}
+
+#credits {
+    margin-top: 41px;
+    text-align: right;
+    font-size: 10px;
 }
