@@ -12,7 +12,8 @@ $(document).ready(function () {
         console.log('jqXHR:', jqXHR);
         console.log('textStatus:', textStatus);
         console.log('Error:', error);
-        //$('#error').text(error);
+        $('#error').text("You probably have adblock enabled or another ad blocking plugin. If you want to test the application, please add the page to the white list.");
+        $('#error').addClass('error');
     }
 
     function cbDataIp(dataIpLocation) {
