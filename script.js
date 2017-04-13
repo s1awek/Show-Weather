@@ -109,6 +109,7 @@ $(document).ready(function () {
                 $('#unit-changer-wrapper').replaceWith('<div id="unit-changer-wrapper"><span class="unit">C</span><span class="small-unit"> / </span><a href="#" id="unit-changer"><span class="small-unit">F</span></a></div>');
                 doIt('si');
             }
+
         });
     }
     //Fire app with default metric units
