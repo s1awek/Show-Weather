@@ -8,30 +8,28 @@
     <link rel="stylesheet" href="
 https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
     <div class="wrapper">
-
         <div class="container">
-             <span class="icon"><img class="weather-ico" src="img/icons/placeholder.svg" alt="weather-ico"></span>
+            <span class="icon"><img class="weather-ico" src="http://res.cloudinary.com/s1awek/image/upload/weather-app/icons/placeholder.svg" alt="weather-ico"></span>
             <div id="location">City, CC</div>
             <div class="temp-container">
                 <span id="temperature">0</span>
                 <span class="degre">o</span>
-
                 <div id="unit-changer-wrapper">
                     <span class="unit">C</span>
                     <span class="small-unit"> / </span>
                     <a href="#" id="unit-changer"><span class="small-unit">F</span></a>
                 </div>
+                <div id="credits">
+                    <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+                </div>
             </div>
-            <div id="error"></div>
+            <div id="error" class="error"></div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
